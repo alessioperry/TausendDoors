@@ -1,0 +1,20 @@
+﻿-1) Esiste uno stato chiuso
+0) Esiste una porta ed è chiusa
+1) ci sono 100 porte chiuse
+2) Esiste un tunnel con 100 porte
+
+1)Tutte leporte devono essere chiuse
+1)Una porta deve essere chiusa *
+2)Una porta può essere chiusa e non aperta *
+3) la porta deve essere aperta
+4) se apro una porta lo stato è aperto
+5) se chiudo una porta lo stato è chiuso
+6) qualcuno chiude la porta se la porta è aperta
+
+7)  la responsabilita di cambiare lo stato di una porta deve essere del metodo StepOver (di Person) o di qualcun'altro?
+
+
+8) Un tunnel è un insieme di porte
+9) se un tunnel è di 100 porte, una persona per attraversarlo deve fare 100 passi
+
+10) La persona passa attraverso il tunnel 
