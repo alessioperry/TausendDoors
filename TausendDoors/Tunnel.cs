@@ -12,11 +12,21 @@ namespace TausendDoors
             }
         }
 
+
+        public void StepHundred(Person p)
+        {
+            for (var i = 1; i <= 100; i ++)
+            {
+                StepN(i, p);
+            }
+        }
+
         public void StepN(int step, Person p)
         {
-            foreach (var VARIABLE in this)
+            for (var i = 0; i < Count; i ++)
             {
-                ForEach(p.StepOver);
+                if (Count > i * step)
+                    p.StepOver(this[i * step]);
             }
         }
     }

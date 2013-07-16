@@ -1,5 +1,7 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Text;
 using NUnit.Framework;
 
 namespace TausendDoors
@@ -106,10 +108,22 @@ namespace TausendDoors
             Assert.AreEqual(50, person.Steps());
         }
 
-        
+        [Test]
+        public void IterateTunnel()
+        {
+            var person = new Person();
+            var tunnel = new Tunnel(100);
 
+            tunnel.StepHundred(person);
 
+            var status = new StringBuilder();
 
+            tunnel.ForEach(door => status.Append(string.Format("{0};", door.Status().ToString())));
 
+            var result = status.ToString();
+
+            var i = 1 + 5;
+
+        }
     }
 }
